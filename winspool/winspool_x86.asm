@@ -1,0 +1,1150 @@
+.MODEL flat,stdcall
+EXTERN pfnAheadLib_Unnamed100:dword;
+EXTERN pfnAheadLib_Unnamed101:dword;
+EXTERN pfnAheadLib_Unnamed102:dword;
+EXTERN pfnAheadLib_Unnamed103:dword;
+EXTERN pfnAheadLib_ADVANCEDSETUPDIALOG:dword;
+EXTERN pfnAheadLib_AdvancedSetupDialog:dword;
+EXTERN pfnAheadLib_ConvertAnsiDevModeToUnicodeDevmode:dword;
+EXTERN pfnAheadLib_ConvertUnicodeDevModeToAnsiDevmode:dword;
+EXTERN pfnAheadLib_DEVICEMODE:dword;
+EXTERN pfnAheadLib_DeviceMode:dword;
+EXTERN pfnAheadLib_DocumentEvent:dword;
+EXTERN pfnAheadLib_PerfClose:dword;
+EXTERN pfnAheadLib_PerfCollect:dword;
+EXTERN pfnAheadLib_PerfOpen:dword;
+EXTERN pfnAheadLib_QueryColorProfile:dword;
+EXTERN pfnAheadLib_QueryRemoteFonts:dword;
+EXTERN pfnAheadLib_QuerySpoolMode:dword;
+EXTERN pfnAheadLib_SpoolerDevQueryPrintW:dword;
+EXTERN pfnAheadLib_StartDocDlgW:dword;
+EXTERN pfnAheadLib_AbortPrinter:dword;
+EXTERN pfnAheadLib_AddFormA:dword;
+EXTERN pfnAheadLib_AddFormW:dword;
+EXTERN pfnAheadLib_AddJobA:dword;
+EXTERN pfnAheadLib_AddJobW:dword;
+EXTERN pfnAheadLib_AddMonitorA:dword;
+EXTERN pfnAheadLib_AddMonitorW:dword;
+EXTERN pfnAheadLib_AddPortA:dword;
+EXTERN pfnAheadLib_AddPortExA:dword;
+EXTERN pfnAheadLib_AddPortExW:dword;
+EXTERN pfnAheadLib_AddPortW:dword;
+EXTERN pfnAheadLib_AddPrintProcessorA:dword;
+EXTERN pfnAheadLib_AddPrintProcessorW:dword;
+EXTERN pfnAheadLib_AddPrintProvidorA:dword;
+EXTERN pfnAheadLib_AddPrintProvidorW:dword;
+EXTERN pfnAheadLib_AddPrinterA:dword;
+EXTERN pfnAheadLib_AddPrinterConnection2A:dword;
+EXTERN pfnAheadLib_AddPrinterConnection2W:dword;
+EXTERN pfnAheadLib_AddPrinterConnectionA:dword;
+EXTERN pfnAheadLib_AddPrinterConnectionW:dword;
+EXTERN pfnAheadLib_AddPrinterDriverA:dword;
+EXTERN pfnAheadLib_AddPrinterDriverExA:dword;
+EXTERN pfnAheadLib_AddPrinterDriverExW:dword;
+EXTERN pfnAheadLib_AddPrinterDriverW:dword;
+EXTERN pfnAheadLib_AddPrinterW:dword;
+EXTERN pfnAheadLib_AdvancedDocumentPropertiesA:dword;
+EXTERN pfnAheadLib_AdvancedDocumentPropertiesW:dword;
+EXTERN pfnAheadLib_ClosePrinter:dword;
+EXTERN pfnAheadLib_CloseSpoolFileHandle:dword;
+EXTERN pfnAheadLib_CommitSpoolData:dword;
+EXTERN pfnAheadLib_ConfigurePortA:dword;
+EXTERN pfnAheadLib_ConfigurePortW:dword;
+EXTERN pfnAheadLib_ConnectToPrinterDlg:dword;
+EXTERN pfnAheadLib_CorePrinterDriverInstalledA:dword;
+EXTERN pfnAheadLib_CorePrinterDriverInstalledW:dword;
+EXTERN pfnAheadLib_CreatePrintAsyncNotifyChannel:dword;
+EXTERN pfnAheadLib_CreatePrinterIC:dword;
+EXTERN pfnAheadLib_DEVICECAPABILITIES:dword;
+EXTERN pfnAheadLib_DeleteFormA:dword;
+EXTERN pfnAheadLib_DeleteFormW:dword;
+EXTERN pfnAheadLib_DeleteMonitorA:dword;
+EXTERN pfnAheadLib_DeleteMonitorW:dword;
+EXTERN pfnAheadLib_DeletePortA:dword;
+EXTERN pfnAheadLib_DeletePortW:dword;
+EXTERN pfnAheadLib_DeletePrintProcessorA:dword;
+EXTERN pfnAheadLib_DeletePrintProcessorW:dword;
+EXTERN pfnAheadLib_DeletePrintProvidorA:dword;
+EXTERN pfnAheadLib_DeletePrintProvidorW:dword;
+EXTERN pfnAheadLib_DeletePrinter:dword;
+EXTERN pfnAheadLib_DeletePrinterConnectionA:dword;
+EXTERN pfnAheadLib_DeletePrinterConnectionW:dword;
+EXTERN pfnAheadLib_DeletePrinterDataA:dword;
+EXTERN pfnAheadLib_DeletePrinterDataExA:dword;
+EXTERN pfnAheadLib_DeletePrinterDataExW:dword;
+EXTERN pfnAheadLib_DeletePrinterDataW:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverA:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverExA:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverExW:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverPackageA:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverPackageW:dword;
+EXTERN pfnAheadLib_DeletePrinterDriverW:dword;
+EXTERN pfnAheadLib_DeletePrinterIC:dword;
+EXTERN pfnAheadLib_DeletePrinterKeyA:dword;
+EXTERN pfnAheadLib_DeletePrinterKeyW:dword;
+EXTERN pfnAheadLib_DevQueryPrint:dword;
+EXTERN pfnAheadLib_DevQueryPrintEx:dword;
+EXTERN pfnAheadLib_DeviceCapabilities:dword;
+EXTERN pfnAheadLib_DeviceCapabilitiesA:dword;
+EXTERN pfnAheadLib_DeviceCapabilitiesW:dword;
+EXTERN pfnAheadLib_DevicePropertySheets:dword;
+EXTERN pfnAheadLib_DocumentPropertiesA:dword;
+EXTERN pfnAheadLib_DocumentPropertiesW:dword;
+EXTERN pfnAheadLib_DocumentPropertySheets:dword;
+EXTERN pfnAheadLib_EXTDEVICEMODE:dword;
+EXTERN pfnAheadLib_EndDocPrinter:dword;
+EXTERN pfnAheadLib_EndPagePrinter:dword;
+EXTERN pfnAheadLib_EnumFormsA:dword;
+EXTERN pfnAheadLib_EnumFormsW:dword;
+EXTERN pfnAheadLib_EnumJobsA:dword;
+EXTERN pfnAheadLib_EnumJobsW:dword;
+EXTERN pfnAheadLib_EnumMonitorsA:dword;
+EXTERN pfnAheadLib_EnumMonitorsW:dword;
+EXTERN pfnAheadLib_GetDefaultPrinterA:dword;
+EXTERN pfnAheadLib_SetDefaultPrinterA:dword;
+EXTERN pfnAheadLib_GetDefaultPrinterW:dword;
+EXTERN pfnAheadLib_SetDefaultPrinterW:dword;
+EXTERN pfnAheadLib_Unnamed205:dword;
+EXTERN pfnAheadLib_Unnamed206:dword;
+EXTERN pfnAheadLib_Unnamed207:dword;
+EXTERN pfnAheadLib_Unnamed208:dword;
+EXTERN pfnAheadLib_Unnamed209:dword;
+EXTERN pfnAheadLib_Unnamed210:dword;
+EXTERN pfnAheadLib_Unnamed211:dword;
+EXTERN pfnAheadLib_Unnamed212:dword;
+EXTERN pfnAheadLib_Unnamed213:dword;
+EXTERN pfnAheadLib_Unnamed214:dword;
+EXTERN pfnAheadLib_Unnamed215:dword;
+EXTERN pfnAheadLib_Unnamed216:dword;
+EXTERN pfnAheadLib_Unnamed217:dword;
+EXTERN pfnAheadLib_Unnamed218:dword;
+EXTERN pfnAheadLib_Unnamed219:dword;
+EXTERN pfnAheadLib_Unnamed220:dword;
+EXTERN pfnAheadLib_Unnamed221:dword;
+EXTERN pfnAheadLib_Unnamed222:dword;
+EXTERN pfnAheadLib_Unnamed223:dword;
+EXTERN pfnAheadLib_Unnamed224:dword;
+EXTERN pfnAheadLib_EnumPortsA:dword;
+EXTERN pfnAheadLib_Unnamed226:dword;
+EXTERN pfnAheadLib_Unnamed227:dword;
+EXTERN pfnAheadLib_Unnamed228:dword;
+EXTERN pfnAheadLib_Unnamed229:dword;
+EXTERN pfnAheadLib_Unnamed230:dword;
+EXTERN pfnAheadLib_Unnamed231:dword;
+EXTERN pfnAheadLib_EnumPortsW:dword;
+EXTERN pfnAheadLib_Unnamed233:dword;
+EXTERN pfnAheadLib_Unnamed234:dword;
+EXTERN pfnAheadLib_EnumPrintProcessorDatatypesA:dword;
+EXTERN pfnAheadLib_EnumPrintProcessorDatatypesW:dword;
+EXTERN pfnAheadLib_EnumPrintProcessorsA:dword;
+EXTERN pfnAheadLib_EnumPrintProcessorsW:dword;
+EXTERN pfnAheadLib_EnumPrinterDataA:dword;
+EXTERN pfnAheadLib_EnumPrinterDataExA:dword;
+EXTERN pfnAheadLib_EnumPrinterDataExW:dword;
+EXTERN pfnAheadLib_EnumPrinterDataW:dword;
+EXTERN pfnAheadLib_EnumPrinterDriversA:dword;
+EXTERN pfnAheadLib_EnumPrinterDriversW:dword;
+EXTERN pfnAheadLib_EnumPrinterKeyA:dword;
+EXTERN pfnAheadLib_EnumPrinterKeyW:dword;
+EXTERN pfnAheadLib_EnumPrintersA:dword;
+EXTERN pfnAheadLib_EnumPrintersW:dword;
+EXTERN pfnAheadLib_ExtDeviceMode:dword;
+EXTERN pfnAheadLib_Unnamed250:dword;
+EXTERN pfnAheadLib_Unnamed251:dword;
+EXTERN pfnAheadLib_Unnamed252:dword;
+EXTERN pfnAheadLib_Unnamed253:dword;
+EXTERN pfnAheadLib_Unnamed254:dword;
+EXTERN pfnAheadLib_Unnamed255:dword;
+EXTERN pfnAheadLib_Unnamed256:dword;
+EXTERN pfnAheadLib_FindClosePrinterChangeNotification:dword;
+EXTERN pfnAheadLib_FindFirstPrinterChangeNotification:dword;
+EXTERN pfnAheadLib_FindNextPrinterChangeNotification:dword;
+EXTERN pfnAheadLib_FlushPrinter:dword;
+EXTERN pfnAheadLib_FreePrinterNotifyInfo:dword;
+EXTERN pfnAheadLib_GetCorePrinterDriversA:dword;
+EXTERN pfnAheadLib_GetCorePrinterDriversW:dword;
+EXTERN pfnAheadLib_GetFormA:dword;
+EXTERN pfnAheadLib_GetFormW:dword;
+EXTERN pfnAheadLib_GetJobA:dword;
+EXTERN pfnAheadLib_GetJobW:dword;
+EXTERN pfnAheadLib_GetPrintExecutionData:dword;
+EXTERN pfnAheadLib_GetPrintProcessorDirectoryA:dword;
+EXTERN pfnAheadLib_GetPrintProcessorDirectoryW:dword;
+EXTERN pfnAheadLib_GetPrinterA:dword;
+EXTERN pfnAheadLib_GetPrinterDataA:dword;
+EXTERN pfnAheadLib_GetPrinterDataExA:dword;
+EXTERN pfnAheadLib_GetPrinterDataExW:dword;
+EXTERN pfnAheadLib_GetPrinterDataW:dword;
+EXTERN pfnAheadLib_GetPrinterDriver2A:dword;
+EXTERN pfnAheadLib_GetPrinterDriver2W:dword;
+EXTERN pfnAheadLib_GetPrinterDriverA:dword;
+EXTERN pfnAheadLib_GetPrinterDriverDirectoryA:dword;
+EXTERN pfnAheadLib_GetPrinterDriverDirectoryW:dword;
+EXTERN pfnAheadLib_GetPrinterDriverPackagePathA:dword;
+EXTERN pfnAheadLib_GetPrinterDriverPackagePathW:dword;
+EXTERN pfnAheadLib_GetPrinterDriverW:dword;
+EXTERN pfnAheadLib_GetPrinterW:dword;
+EXTERN pfnAheadLib_GetSpoolFileHandle:dword;
+EXTERN pfnAheadLib_InstallPrinterDriverFromPackageA:dword;
+EXTERN pfnAheadLib_InstallPrinterDriverFromPackageW:dword;
+EXTERN pfnAheadLib_IsValidDevmodeA:dword;
+EXTERN pfnAheadLib_IsValidDevmodeW:dword;
+EXTERN pfnAheadLib_OpenPrinter2A:dword;
+EXTERN pfnAheadLib_OpenPrinter2W:dword;
+EXTERN pfnAheadLib_OpenPrinterA:dword;
+EXTERN pfnAheadLib_OpenPrinterW:dword;
+EXTERN pfnAheadLib_PlayGdiScriptOnPrinterIC:dword;
+EXTERN pfnAheadLib_PrinterMessageBoxA:dword;
+EXTERN pfnAheadLib_PrinterMessageBoxW:dword;
+EXTERN pfnAheadLib_PrinterProperties:dword;
+EXTERN pfnAheadLib_ReadPrinter:dword;
+EXTERN pfnAheadLib_RegisterForPrintAsyncNotifications:dword;
+EXTERN pfnAheadLib_ReportJobProcessingProgress:dword;
+EXTERN pfnAheadLib_ResetPrinterA:dword;
+EXTERN pfnAheadLib_ResetPrinterW:dword;
+EXTERN pfnAheadLib_ScheduleJob:dword;
+EXTERN pfnAheadLib_SeekPrinter:dword;
+EXTERN pfnAheadLib_SetFormA:dword;
+EXTERN pfnAheadLib_SetFormW:dword;
+EXTERN pfnAheadLib_SetJobA:dword;
+EXTERN pfnAheadLib_SetJobW:dword;
+EXTERN pfnAheadLib_SetPortA:dword;
+EXTERN pfnAheadLib_SetPortW:dword;
+EXTERN pfnAheadLib_SetPrinterA:dword;
+EXTERN pfnAheadLib_SetPrinterDataA:dword;
+EXTERN pfnAheadLib_SetPrinterDataExA:dword;
+EXTERN pfnAheadLib_SetPrinterDataExW:dword;
+EXTERN pfnAheadLib_SetPrinterDataW:dword;
+EXTERN pfnAheadLib_SetPrinterW:dword;
+EXTERN pfnAheadLib_SplDriverUnloadComplete:dword;
+EXTERN pfnAheadLib_SpoolerPrinterEvent:dword;
+EXTERN pfnAheadLib_StartDocDlgA:dword;
+EXTERN pfnAheadLib_StartDocPrinterA:dword;
+EXTERN pfnAheadLib_StartDocPrinterW:dword;
+EXTERN pfnAheadLib_StartPagePrinter:dword;
+EXTERN pfnAheadLib_UnRegisterForPrintAsyncNotifications:dword;
+EXTERN pfnAheadLib_UploadPrinterDriverPackageA:dword;
+EXTERN pfnAheadLib_UploadPrinterDriverPackageW:dword;
+EXTERN pfnAheadLib_WaitForPrinterChange:dword;
+EXTERN pfnAheadLib_WritePrinter:dword;
+EXTERN pfnAheadLib_XcvDataW:dword;
+
+.code
+AheadLib_Unnamed100 PROC
+	jmp pfnAheadLib_Unnamed100
+AheadLib_Unnamed100 ENDP
+
+AheadLib_Unnamed101 PROC
+	jmp pfnAheadLib_Unnamed101
+AheadLib_Unnamed101 ENDP
+
+AheadLib_Unnamed102 PROC
+	jmp pfnAheadLib_Unnamed102
+AheadLib_Unnamed102 ENDP
+
+AheadLib_Unnamed103 PROC
+	jmp pfnAheadLib_Unnamed103
+AheadLib_Unnamed103 ENDP
+
+AheadLib_ADVANCEDSETUPDIALOG PROC
+	jmp pfnAheadLib_ADVANCEDSETUPDIALOG
+AheadLib_ADVANCEDSETUPDIALOG ENDP
+
+AheadLib_AdvancedSetupDialog2 PROC
+	jmp pfnAheadLib_AdvancedSetupDialog
+AheadLib_AdvancedSetupDialog2 ENDP
+
+AheadLib_ConvertAnsiDevModeToUnicodeDevmode PROC
+	jmp pfnAheadLib_ConvertAnsiDevModeToUnicodeDevmode
+AheadLib_ConvertAnsiDevModeToUnicodeDevmode ENDP
+
+AheadLib_ConvertUnicodeDevModeToAnsiDevmode PROC
+	jmp pfnAheadLib_ConvertUnicodeDevModeToAnsiDevmode
+AheadLib_ConvertUnicodeDevModeToAnsiDevmode ENDP
+
+AheadLib_DEVICEMODE PROC
+	jmp pfnAheadLib_DEVICEMODE
+AheadLib_DEVICEMODE ENDP
+
+AheadLib_DeviceMode2 PROC
+	jmp pfnAheadLib_DeviceMode
+AheadLib_DeviceMode2 ENDP
+
+AheadLib_DocumentEvent PROC
+	jmp pfnAheadLib_DocumentEvent
+AheadLib_DocumentEvent ENDP
+
+AheadLib_PerfClose PROC
+	jmp pfnAheadLib_PerfClose
+AheadLib_PerfClose ENDP
+
+AheadLib_PerfCollect PROC
+	jmp pfnAheadLib_PerfCollect
+AheadLib_PerfCollect ENDP
+
+AheadLib_PerfOpen PROC
+	jmp pfnAheadLib_PerfOpen
+AheadLib_PerfOpen ENDP
+
+AheadLib_QueryColorProfile PROC
+	jmp pfnAheadLib_QueryColorProfile
+AheadLib_QueryColorProfile ENDP
+
+AheadLib_QueryRemoteFonts PROC
+	jmp pfnAheadLib_QueryRemoteFonts
+AheadLib_QueryRemoteFonts ENDP
+
+AheadLib_QuerySpoolMode PROC
+	jmp pfnAheadLib_QuerySpoolMode
+AheadLib_QuerySpoolMode ENDP
+
+AheadLib_SpoolerDevQueryPrintW PROC
+	jmp pfnAheadLib_SpoolerDevQueryPrintW
+AheadLib_SpoolerDevQueryPrintW ENDP
+
+AheadLib_StartDocDlgW PROC
+	jmp pfnAheadLib_StartDocDlgW
+AheadLib_StartDocDlgW ENDP
+
+AheadLib_AbortPrinter PROC
+	jmp pfnAheadLib_AbortPrinter
+AheadLib_AbortPrinter ENDP
+
+AheadLib_AddFormA PROC
+	jmp pfnAheadLib_AddFormA
+AheadLib_AddFormA ENDP
+
+AheadLib_AddFormW PROC
+	jmp pfnAheadLib_AddFormW
+AheadLib_AddFormW ENDP
+
+AheadLib_AddJobA PROC
+	jmp pfnAheadLib_AddJobA
+AheadLib_AddJobA ENDP
+
+AheadLib_AddJobW PROC
+	jmp pfnAheadLib_AddJobW
+AheadLib_AddJobW ENDP
+
+AheadLib_AddMonitorA PROC
+	jmp pfnAheadLib_AddMonitorA
+AheadLib_AddMonitorA ENDP
+
+AheadLib_AddMonitorW PROC
+	jmp pfnAheadLib_AddMonitorW
+AheadLib_AddMonitorW ENDP
+
+AheadLib_AddPortA PROC
+	jmp pfnAheadLib_AddPortA
+AheadLib_AddPortA ENDP
+
+AheadLib_AddPortExA PROC
+	jmp pfnAheadLib_AddPortExA
+AheadLib_AddPortExA ENDP
+
+AheadLib_AddPortExW PROC
+	jmp pfnAheadLib_AddPortExW
+AheadLib_AddPortExW ENDP
+
+AheadLib_AddPortW PROC
+	jmp pfnAheadLib_AddPortW
+AheadLib_AddPortW ENDP
+
+AheadLib_AddPrintProcessorA PROC
+	jmp pfnAheadLib_AddPrintProcessorA
+AheadLib_AddPrintProcessorA ENDP
+
+AheadLib_AddPrintProcessorW PROC
+	jmp pfnAheadLib_AddPrintProcessorW
+AheadLib_AddPrintProcessorW ENDP
+
+AheadLib_AddPrintProvidorA PROC
+	jmp pfnAheadLib_AddPrintProvidorA
+AheadLib_AddPrintProvidorA ENDP
+
+AheadLib_AddPrintProvidorW PROC
+	jmp pfnAheadLib_AddPrintProvidorW
+AheadLib_AddPrintProvidorW ENDP
+
+AheadLib_AddPrinterA PROC
+	jmp pfnAheadLib_AddPrinterA
+AheadLib_AddPrinterA ENDP
+
+AheadLib_AddPrinterConnection2A PROC
+	jmp pfnAheadLib_AddPrinterConnection2A
+AheadLib_AddPrinterConnection2A ENDP
+
+AheadLib_AddPrinterConnection2W PROC
+	jmp pfnAheadLib_AddPrinterConnection2W
+AheadLib_AddPrinterConnection2W ENDP
+
+AheadLib_AddPrinterConnectionA PROC
+	jmp pfnAheadLib_AddPrinterConnectionA
+AheadLib_AddPrinterConnectionA ENDP
+
+AheadLib_AddPrinterConnectionW PROC
+	jmp pfnAheadLib_AddPrinterConnectionW
+AheadLib_AddPrinterConnectionW ENDP
+
+AheadLib_AddPrinterDriverA PROC
+	jmp pfnAheadLib_AddPrinterDriverA
+AheadLib_AddPrinterDriverA ENDP
+
+AheadLib_AddPrinterDriverExA PROC
+	jmp pfnAheadLib_AddPrinterDriverExA
+AheadLib_AddPrinterDriverExA ENDP
+
+AheadLib_AddPrinterDriverExW PROC
+	jmp pfnAheadLib_AddPrinterDriverExW
+AheadLib_AddPrinterDriverExW ENDP
+
+AheadLib_AddPrinterDriverW PROC
+	jmp pfnAheadLib_AddPrinterDriverW
+AheadLib_AddPrinterDriverW ENDP
+
+AheadLib_AddPrinterW PROC
+	jmp pfnAheadLib_AddPrinterW
+AheadLib_AddPrinterW ENDP
+
+AheadLib_AdvancedDocumentPropertiesA PROC
+	jmp pfnAheadLib_AdvancedDocumentPropertiesA
+AheadLib_AdvancedDocumentPropertiesA ENDP
+
+AheadLib_AdvancedDocumentPropertiesW PROC
+	jmp pfnAheadLib_AdvancedDocumentPropertiesW
+AheadLib_AdvancedDocumentPropertiesW ENDP
+
+AheadLib_ClosePrinter PROC
+	jmp pfnAheadLib_ClosePrinter
+AheadLib_ClosePrinter ENDP
+
+AheadLib_CloseSpoolFileHandle PROC
+	jmp pfnAheadLib_CloseSpoolFileHandle
+AheadLib_CloseSpoolFileHandle ENDP
+
+AheadLib_CommitSpoolData PROC
+	jmp pfnAheadLib_CommitSpoolData
+AheadLib_CommitSpoolData ENDP
+
+AheadLib_ConfigurePortA PROC
+	jmp pfnAheadLib_ConfigurePortA
+AheadLib_ConfigurePortA ENDP
+
+AheadLib_ConfigurePortW PROC
+	jmp pfnAheadLib_ConfigurePortW
+AheadLib_ConfigurePortW ENDP
+
+AheadLib_ConnectToPrinterDlg PROC
+	jmp pfnAheadLib_ConnectToPrinterDlg
+AheadLib_ConnectToPrinterDlg ENDP
+
+AheadLib_CorePrinterDriverInstalledA PROC
+	jmp pfnAheadLib_CorePrinterDriverInstalledA
+AheadLib_CorePrinterDriverInstalledA ENDP
+
+AheadLib_CorePrinterDriverInstalledW PROC
+	jmp pfnAheadLib_CorePrinterDriverInstalledW
+AheadLib_CorePrinterDriverInstalledW ENDP
+
+AheadLib_CreatePrintAsyncNotifyChannel PROC
+	jmp pfnAheadLib_CreatePrintAsyncNotifyChannel
+AheadLib_CreatePrintAsyncNotifyChannel ENDP
+
+AheadLib_CreatePrinterIC PROC
+	jmp pfnAheadLib_CreatePrinterIC
+AheadLib_CreatePrinterIC ENDP
+
+AheadLib_DEVICECAPABILITIES PROC
+	jmp pfnAheadLib_DEVICECAPABILITIES
+AheadLib_DEVICECAPABILITIES ENDP
+
+AheadLib_DeleteFormA PROC
+	jmp pfnAheadLib_DeleteFormA
+AheadLib_DeleteFormA ENDP
+
+AheadLib_DeleteFormW PROC
+	jmp pfnAheadLib_DeleteFormW
+AheadLib_DeleteFormW ENDP
+
+AheadLib_DeleteMonitorA PROC
+	jmp pfnAheadLib_DeleteMonitorA
+AheadLib_DeleteMonitorA ENDP
+
+AheadLib_DeleteMonitorW PROC
+	jmp pfnAheadLib_DeleteMonitorW
+AheadLib_DeleteMonitorW ENDP
+
+AheadLib_DeletePortA PROC
+	jmp pfnAheadLib_DeletePortA
+AheadLib_DeletePortA ENDP
+
+AheadLib_DeletePortW PROC
+	jmp pfnAheadLib_DeletePortW
+AheadLib_DeletePortW ENDP
+
+AheadLib_DeletePrintProcessorA PROC
+	jmp pfnAheadLib_DeletePrintProcessorA
+AheadLib_DeletePrintProcessorA ENDP
+
+AheadLib_DeletePrintProcessorW PROC
+	jmp pfnAheadLib_DeletePrintProcessorW
+AheadLib_DeletePrintProcessorW ENDP
+
+AheadLib_DeletePrintProvidorA PROC
+	jmp pfnAheadLib_DeletePrintProvidorA
+AheadLib_DeletePrintProvidorA ENDP
+
+AheadLib_DeletePrintProvidorW PROC
+	jmp pfnAheadLib_DeletePrintProvidorW
+AheadLib_DeletePrintProvidorW ENDP
+
+AheadLib_DeletePrinter PROC
+	jmp pfnAheadLib_DeletePrinter
+AheadLib_DeletePrinter ENDP
+
+AheadLib_DeletePrinterConnectionA PROC
+	jmp pfnAheadLib_DeletePrinterConnectionA
+AheadLib_DeletePrinterConnectionA ENDP
+
+AheadLib_DeletePrinterConnectionW PROC
+	jmp pfnAheadLib_DeletePrinterConnectionW
+AheadLib_DeletePrinterConnectionW ENDP
+
+AheadLib_DeletePrinterDataA PROC
+	jmp pfnAheadLib_DeletePrinterDataA
+AheadLib_DeletePrinterDataA ENDP
+
+AheadLib_DeletePrinterDataExA PROC
+	jmp pfnAheadLib_DeletePrinterDataExA
+AheadLib_DeletePrinterDataExA ENDP
+
+AheadLib_DeletePrinterDataExW PROC
+	jmp pfnAheadLib_DeletePrinterDataExW
+AheadLib_DeletePrinterDataExW ENDP
+
+AheadLib_DeletePrinterDataW PROC
+	jmp pfnAheadLib_DeletePrinterDataW
+AheadLib_DeletePrinterDataW ENDP
+
+AheadLib_DeletePrinterDriverA PROC
+	jmp pfnAheadLib_DeletePrinterDriverA
+AheadLib_DeletePrinterDriverA ENDP
+
+AheadLib_DeletePrinterDriverExA PROC
+	jmp pfnAheadLib_DeletePrinterDriverExA
+AheadLib_DeletePrinterDriverExA ENDP
+
+AheadLib_DeletePrinterDriverExW PROC
+	jmp pfnAheadLib_DeletePrinterDriverExW
+AheadLib_DeletePrinterDriverExW ENDP
+
+AheadLib_DeletePrinterDriverPackageA PROC
+	jmp pfnAheadLib_DeletePrinterDriverPackageA
+AheadLib_DeletePrinterDriverPackageA ENDP
+
+AheadLib_DeletePrinterDriverPackageW PROC
+	jmp pfnAheadLib_DeletePrinterDriverPackageW
+AheadLib_DeletePrinterDriverPackageW ENDP
+
+AheadLib_DeletePrinterDriverW PROC
+	jmp pfnAheadLib_DeletePrinterDriverW
+AheadLib_DeletePrinterDriverW ENDP
+
+AheadLib_DeletePrinterIC PROC
+	jmp pfnAheadLib_DeletePrinterIC
+AheadLib_DeletePrinterIC ENDP
+
+AheadLib_DeletePrinterKeyA PROC
+	jmp pfnAheadLib_DeletePrinterKeyA
+AheadLib_DeletePrinterKeyA ENDP
+
+AheadLib_DeletePrinterKeyW PROC
+	jmp pfnAheadLib_DeletePrinterKeyW
+AheadLib_DeletePrinterKeyW ENDP
+
+AheadLib_DevQueryPrint PROC
+	jmp pfnAheadLib_DevQueryPrint
+AheadLib_DevQueryPrint ENDP
+
+AheadLib_DevQueryPrintEx PROC
+	jmp pfnAheadLib_DevQueryPrintEx
+AheadLib_DevQueryPrintEx ENDP
+
+AheadLib_DeviceCapabilities2 PROC
+	jmp pfnAheadLib_DeviceCapabilities
+AheadLib_DeviceCapabilities2 ENDP
+
+AheadLib_DeviceCapabilitiesA PROC
+	jmp pfnAheadLib_DeviceCapabilitiesA
+AheadLib_DeviceCapabilitiesA ENDP
+
+AheadLib_DeviceCapabilitiesW PROC
+	jmp pfnAheadLib_DeviceCapabilitiesW
+AheadLib_DeviceCapabilitiesW ENDP
+
+AheadLib_DevicePropertySheets PROC
+	jmp pfnAheadLib_DevicePropertySheets
+AheadLib_DevicePropertySheets ENDP
+
+AheadLib_DocumentPropertiesA PROC
+	jmp pfnAheadLib_DocumentPropertiesA
+AheadLib_DocumentPropertiesA ENDP
+
+AheadLib_DocumentPropertiesW PROC
+	jmp pfnAheadLib_DocumentPropertiesW
+AheadLib_DocumentPropertiesW ENDP
+
+AheadLib_DocumentPropertySheets PROC
+	jmp pfnAheadLib_DocumentPropertySheets
+AheadLib_DocumentPropertySheets ENDP
+
+AheadLib_EXTDEVICEMODE PROC
+	jmp pfnAheadLib_EXTDEVICEMODE
+AheadLib_EXTDEVICEMODE ENDP
+
+AheadLib_EndDocPrinter PROC
+	jmp pfnAheadLib_EndDocPrinter
+AheadLib_EndDocPrinter ENDP
+
+AheadLib_EndPagePrinter PROC
+	jmp pfnAheadLib_EndPagePrinter
+AheadLib_EndPagePrinter ENDP
+
+AheadLib_EnumFormsA PROC
+	jmp pfnAheadLib_EnumFormsA
+AheadLib_EnumFormsA ENDP
+
+AheadLib_EnumFormsW PROC
+	jmp pfnAheadLib_EnumFormsW
+AheadLib_EnumFormsW ENDP
+
+AheadLib_EnumJobsA PROC
+	jmp pfnAheadLib_EnumJobsA
+AheadLib_EnumJobsA ENDP
+
+AheadLib_EnumJobsW PROC
+	jmp pfnAheadLib_EnumJobsW
+AheadLib_EnumJobsW ENDP
+
+AheadLib_EnumMonitorsA PROC
+	jmp pfnAheadLib_EnumMonitorsA
+AheadLib_EnumMonitorsA ENDP
+
+AheadLib_EnumMonitorsW PROC
+	jmp pfnAheadLib_EnumMonitorsW
+AheadLib_EnumMonitorsW ENDP
+
+AheadLib_GetDefaultPrinterA PROC
+	jmp pfnAheadLib_GetDefaultPrinterA
+AheadLib_GetDefaultPrinterA ENDP
+
+AheadLib_SetDefaultPrinterA PROC
+	jmp pfnAheadLib_SetDefaultPrinterA
+AheadLib_SetDefaultPrinterA ENDP
+
+AheadLib_GetDefaultPrinterW PROC
+	jmp pfnAheadLib_GetDefaultPrinterW
+AheadLib_GetDefaultPrinterW ENDP
+
+AheadLib_SetDefaultPrinterW PROC
+	jmp pfnAheadLib_SetDefaultPrinterW
+AheadLib_SetDefaultPrinterW ENDP
+
+AheadLib_Unnamed205 PROC
+	jmp pfnAheadLib_Unnamed205
+AheadLib_Unnamed205 ENDP
+
+AheadLib_Unnamed206 PROC
+	jmp pfnAheadLib_Unnamed206
+AheadLib_Unnamed206 ENDP
+
+AheadLib_Unnamed207 PROC
+	jmp pfnAheadLib_Unnamed207
+AheadLib_Unnamed207 ENDP
+
+AheadLib_Unnamed208 PROC
+	jmp pfnAheadLib_Unnamed208
+AheadLib_Unnamed208 ENDP
+
+AheadLib_Unnamed209 PROC
+	jmp pfnAheadLib_Unnamed209
+AheadLib_Unnamed209 ENDP
+
+AheadLib_Unnamed210 PROC
+	jmp pfnAheadLib_Unnamed210
+AheadLib_Unnamed210 ENDP
+
+AheadLib_Unnamed211 PROC
+	jmp pfnAheadLib_Unnamed211
+AheadLib_Unnamed211 ENDP
+
+AheadLib_Unnamed212 PROC
+	jmp pfnAheadLib_Unnamed212
+AheadLib_Unnamed212 ENDP
+
+AheadLib_Unnamed213 PROC
+	jmp pfnAheadLib_Unnamed213
+AheadLib_Unnamed213 ENDP
+
+AheadLib_Unnamed214 PROC
+	jmp pfnAheadLib_Unnamed214
+AheadLib_Unnamed214 ENDP
+
+AheadLib_Unnamed215 PROC
+	jmp pfnAheadLib_Unnamed215
+AheadLib_Unnamed215 ENDP
+
+AheadLib_Unnamed216 PROC
+	jmp pfnAheadLib_Unnamed216
+AheadLib_Unnamed216 ENDP
+
+AheadLib_Unnamed217 PROC
+	jmp pfnAheadLib_Unnamed217
+AheadLib_Unnamed217 ENDP
+
+AheadLib_Unnamed218 PROC
+	jmp pfnAheadLib_Unnamed218
+AheadLib_Unnamed218 ENDP
+
+AheadLib_Unnamed219 PROC
+	jmp pfnAheadLib_Unnamed219
+AheadLib_Unnamed219 ENDP
+
+AheadLib_Unnamed220 PROC
+	jmp pfnAheadLib_Unnamed220
+AheadLib_Unnamed220 ENDP
+
+AheadLib_Unnamed221 PROC
+	jmp pfnAheadLib_Unnamed221
+AheadLib_Unnamed221 ENDP
+
+AheadLib_Unnamed222 PROC
+	jmp pfnAheadLib_Unnamed222
+AheadLib_Unnamed222 ENDP
+
+AheadLib_Unnamed223 PROC
+	jmp pfnAheadLib_Unnamed223
+AheadLib_Unnamed223 ENDP
+
+AheadLib_Unnamed224 PROC
+	jmp pfnAheadLib_Unnamed224
+AheadLib_Unnamed224 ENDP
+
+AheadLib_EnumPortsA PROC
+	jmp pfnAheadLib_EnumPortsA
+AheadLib_EnumPortsA ENDP
+
+AheadLib_Unnamed226 PROC
+	jmp pfnAheadLib_Unnamed226
+AheadLib_Unnamed226 ENDP
+
+AheadLib_Unnamed227 PROC
+	jmp pfnAheadLib_Unnamed227
+AheadLib_Unnamed227 ENDP
+
+AheadLib_Unnamed228 PROC
+	jmp pfnAheadLib_Unnamed228
+AheadLib_Unnamed228 ENDP
+
+AheadLib_Unnamed229 PROC
+	jmp pfnAheadLib_Unnamed229
+AheadLib_Unnamed229 ENDP
+
+AheadLib_Unnamed230 PROC
+	jmp pfnAheadLib_Unnamed230
+AheadLib_Unnamed230 ENDP
+
+AheadLib_Unnamed231 PROC
+	jmp pfnAheadLib_Unnamed231
+AheadLib_Unnamed231 ENDP
+
+AheadLib_EnumPortsW PROC
+	jmp pfnAheadLib_EnumPortsW
+AheadLib_EnumPortsW ENDP
+
+AheadLib_Unnamed233 PROC
+	jmp pfnAheadLib_Unnamed233
+AheadLib_Unnamed233 ENDP
+
+AheadLib_Unnamed234 PROC
+	jmp pfnAheadLib_Unnamed234
+AheadLib_Unnamed234 ENDP
+
+AheadLib_EnumPrintProcessorDatatypesA PROC
+	jmp pfnAheadLib_EnumPrintProcessorDatatypesA
+AheadLib_EnumPrintProcessorDatatypesA ENDP
+
+AheadLib_EnumPrintProcessorDatatypesW PROC
+	jmp pfnAheadLib_EnumPrintProcessorDatatypesW
+AheadLib_EnumPrintProcessorDatatypesW ENDP
+
+AheadLib_EnumPrintProcessorsA PROC
+	jmp pfnAheadLib_EnumPrintProcessorsA
+AheadLib_EnumPrintProcessorsA ENDP
+
+AheadLib_EnumPrintProcessorsW PROC
+	jmp pfnAheadLib_EnumPrintProcessorsW
+AheadLib_EnumPrintProcessorsW ENDP
+
+AheadLib_EnumPrinterDataA PROC
+	jmp pfnAheadLib_EnumPrinterDataA
+AheadLib_EnumPrinterDataA ENDP
+
+AheadLib_EnumPrinterDataExA PROC
+	jmp pfnAheadLib_EnumPrinterDataExA
+AheadLib_EnumPrinterDataExA ENDP
+
+AheadLib_EnumPrinterDataExW PROC
+	jmp pfnAheadLib_EnumPrinterDataExW
+AheadLib_EnumPrinterDataExW ENDP
+
+AheadLib_EnumPrinterDataW PROC
+	jmp pfnAheadLib_EnumPrinterDataW
+AheadLib_EnumPrinterDataW ENDP
+
+AheadLib_EnumPrinterDriversA PROC
+	jmp pfnAheadLib_EnumPrinterDriversA
+AheadLib_EnumPrinterDriversA ENDP
+
+AheadLib_EnumPrinterDriversW PROC
+	jmp pfnAheadLib_EnumPrinterDriversW
+AheadLib_EnumPrinterDriversW ENDP
+
+AheadLib_EnumPrinterKeyA PROC
+	jmp pfnAheadLib_EnumPrinterKeyA
+AheadLib_EnumPrinterKeyA ENDP
+
+AheadLib_EnumPrinterKeyW PROC
+	jmp pfnAheadLib_EnumPrinterKeyW
+AheadLib_EnumPrinterKeyW ENDP
+
+AheadLib_EnumPrintersA PROC
+	jmp pfnAheadLib_EnumPrintersA
+AheadLib_EnumPrintersA ENDP
+
+AheadLib_EnumPrintersW PROC
+	jmp pfnAheadLib_EnumPrintersW
+AheadLib_EnumPrintersW ENDP
+
+AheadLib_ExtDeviceMode2 PROC
+	jmp pfnAheadLib_ExtDeviceMode
+AheadLib_ExtDeviceMode2 ENDP
+
+AheadLib_Unnamed250 PROC
+	jmp pfnAheadLib_Unnamed250
+AheadLib_Unnamed250 ENDP
+
+AheadLib_Unnamed251 PROC
+	jmp pfnAheadLib_Unnamed251
+AheadLib_Unnamed251 ENDP
+
+AheadLib_Unnamed252 PROC
+	jmp pfnAheadLib_Unnamed252
+AheadLib_Unnamed252 ENDP
+
+AheadLib_Unnamed253 PROC
+	jmp pfnAheadLib_Unnamed253
+AheadLib_Unnamed253 ENDP
+
+AheadLib_Unnamed254 PROC
+	jmp pfnAheadLib_Unnamed254
+AheadLib_Unnamed254 ENDP
+
+AheadLib_Unnamed255 PROC
+	jmp pfnAheadLib_Unnamed255
+AheadLib_Unnamed255 ENDP
+
+AheadLib_Unnamed256 PROC
+	jmp pfnAheadLib_Unnamed256
+AheadLib_Unnamed256 ENDP
+
+AheadLib_FindClosePrinterChangeNotification PROC
+	jmp pfnAheadLib_FindClosePrinterChangeNotification
+AheadLib_FindClosePrinterChangeNotification ENDP
+
+AheadLib_FindFirstPrinterChangeNotification PROC
+	jmp pfnAheadLib_FindFirstPrinterChangeNotification
+AheadLib_FindFirstPrinterChangeNotification ENDP
+
+AheadLib_FindNextPrinterChangeNotification PROC
+	jmp pfnAheadLib_FindNextPrinterChangeNotification
+AheadLib_FindNextPrinterChangeNotification ENDP
+
+AheadLib_FlushPrinter PROC
+	jmp pfnAheadLib_FlushPrinter
+AheadLib_FlushPrinter ENDP
+
+AheadLib_FreePrinterNotifyInfo PROC
+	jmp pfnAheadLib_FreePrinterNotifyInfo
+AheadLib_FreePrinterNotifyInfo ENDP
+
+AheadLib_GetCorePrinterDriversA PROC
+	jmp pfnAheadLib_GetCorePrinterDriversA
+AheadLib_GetCorePrinterDriversA ENDP
+
+AheadLib_GetCorePrinterDriversW PROC
+	jmp pfnAheadLib_GetCorePrinterDriversW
+AheadLib_GetCorePrinterDriversW ENDP
+
+AheadLib_GetFormA PROC
+	jmp pfnAheadLib_GetFormA
+AheadLib_GetFormA ENDP
+
+AheadLib_GetFormW PROC
+	jmp pfnAheadLib_GetFormW
+AheadLib_GetFormW ENDP
+
+AheadLib_GetJobA PROC
+	jmp pfnAheadLib_GetJobA
+AheadLib_GetJobA ENDP
+
+AheadLib_GetJobW PROC
+	jmp pfnAheadLib_GetJobW
+AheadLib_GetJobW ENDP
+
+AheadLib_GetPrintExecutionData PROC
+	jmp pfnAheadLib_GetPrintExecutionData
+AheadLib_GetPrintExecutionData ENDP
+
+AheadLib_GetPrintProcessorDirectoryA PROC
+	jmp pfnAheadLib_GetPrintProcessorDirectoryA
+AheadLib_GetPrintProcessorDirectoryA ENDP
+
+AheadLib_GetPrintProcessorDirectoryW PROC
+	jmp pfnAheadLib_GetPrintProcessorDirectoryW
+AheadLib_GetPrintProcessorDirectoryW ENDP
+
+AheadLib_GetPrinterA PROC
+	jmp pfnAheadLib_GetPrinterA
+AheadLib_GetPrinterA ENDP
+
+AheadLib_GetPrinterDataA PROC
+	jmp pfnAheadLib_GetPrinterDataA
+AheadLib_GetPrinterDataA ENDP
+
+AheadLib_GetPrinterDataExA PROC
+	jmp pfnAheadLib_GetPrinterDataExA
+AheadLib_GetPrinterDataExA ENDP
+
+AheadLib_GetPrinterDataExW PROC
+	jmp pfnAheadLib_GetPrinterDataExW
+AheadLib_GetPrinterDataExW ENDP
+
+AheadLib_GetPrinterDataW PROC
+	jmp pfnAheadLib_GetPrinterDataW
+AheadLib_GetPrinterDataW ENDP
+
+AheadLib_GetPrinterDriver2A PROC
+	jmp pfnAheadLib_GetPrinterDriver2A
+AheadLib_GetPrinterDriver2A ENDP
+
+AheadLib_GetPrinterDriver2W PROC
+	jmp pfnAheadLib_GetPrinterDriver2W
+AheadLib_GetPrinterDriver2W ENDP
+
+AheadLib_GetPrinterDriverA PROC
+	jmp pfnAheadLib_GetPrinterDriverA
+AheadLib_GetPrinterDriverA ENDP
+
+AheadLib_GetPrinterDriverDirectoryA PROC
+	jmp pfnAheadLib_GetPrinterDriverDirectoryA
+AheadLib_GetPrinterDriverDirectoryA ENDP
+
+AheadLib_GetPrinterDriverDirectoryW PROC
+	jmp pfnAheadLib_GetPrinterDriverDirectoryW
+AheadLib_GetPrinterDriverDirectoryW ENDP
+
+AheadLib_GetPrinterDriverPackagePathA PROC
+	jmp pfnAheadLib_GetPrinterDriverPackagePathA
+AheadLib_GetPrinterDriverPackagePathA ENDP
+
+AheadLib_GetPrinterDriverPackagePathW PROC
+	jmp pfnAheadLib_GetPrinterDriverPackagePathW
+AheadLib_GetPrinterDriverPackagePathW ENDP
+
+AheadLib_GetPrinterDriverW PROC
+	jmp pfnAheadLib_GetPrinterDriverW
+AheadLib_GetPrinterDriverW ENDP
+
+AheadLib_GetPrinterW PROC
+	jmp pfnAheadLib_GetPrinterW
+AheadLib_GetPrinterW ENDP
+
+AheadLib_GetSpoolFileHandle PROC
+	jmp pfnAheadLib_GetSpoolFileHandle
+AheadLib_GetSpoolFileHandle ENDP
+
+AheadLib_InstallPrinterDriverFromPackageA PROC
+	jmp pfnAheadLib_InstallPrinterDriverFromPackageA
+AheadLib_InstallPrinterDriverFromPackageA ENDP
+
+AheadLib_InstallPrinterDriverFromPackageW PROC
+	jmp pfnAheadLib_InstallPrinterDriverFromPackageW
+AheadLib_InstallPrinterDriverFromPackageW ENDP
+
+AheadLib_IsValidDevmodeA PROC
+	jmp pfnAheadLib_IsValidDevmodeA
+AheadLib_IsValidDevmodeA ENDP
+
+AheadLib_IsValidDevmodeW PROC
+	jmp pfnAheadLib_IsValidDevmodeW
+AheadLib_IsValidDevmodeW ENDP
+
+AheadLib_OpenPrinter2A PROC
+	jmp pfnAheadLib_OpenPrinter2A
+AheadLib_OpenPrinter2A ENDP
+
+AheadLib_OpenPrinter2W PROC
+	jmp pfnAheadLib_OpenPrinter2W
+AheadLib_OpenPrinter2W ENDP
+
+AheadLib_OpenPrinterA PROC
+	jmp pfnAheadLib_OpenPrinterA
+AheadLib_OpenPrinterA ENDP
+
+AheadLib_OpenPrinterW PROC
+	jmp pfnAheadLib_OpenPrinterW
+AheadLib_OpenPrinterW ENDP
+
+AheadLib_PlayGdiScriptOnPrinterIC PROC
+	jmp pfnAheadLib_PlayGdiScriptOnPrinterIC
+AheadLib_PlayGdiScriptOnPrinterIC ENDP
+
+AheadLib_PrinterMessageBoxA PROC
+	jmp pfnAheadLib_PrinterMessageBoxA
+AheadLib_PrinterMessageBoxA ENDP
+
+AheadLib_PrinterMessageBoxW PROC
+	jmp pfnAheadLib_PrinterMessageBoxW
+AheadLib_PrinterMessageBoxW ENDP
+
+AheadLib_PrinterProperties PROC
+	jmp pfnAheadLib_PrinterProperties
+AheadLib_PrinterProperties ENDP
+
+AheadLib_ReadPrinter PROC
+	jmp pfnAheadLib_ReadPrinter
+AheadLib_ReadPrinter ENDP
+
+AheadLib_RegisterForPrintAsyncNotifications PROC
+	jmp pfnAheadLib_RegisterForPrintAsyncNotifications
+AheadLib_RegisterForPrintAsyncNotifications ENDP
+
+AheadLib_ReportJobProcessingProgress PROC
+	jmp pfnAheadLib_ReportJobProcessingProgress
+AheadLib_ReportJobProcessingProgress ENDP
+
+AheadLib_ResetPrinterA PROC
+	jmp pfnAheadLib_ResetPrinterA
+AheadLib_ResetPrinterA ENDP
+
+AheadLib_ResetPrinterW PROC
+	jmp pfnAheadLib_ResetPrinterW
+AheadLib_ResetPrinterW ENDP
+
+AheadLib_ScheduleJob PROC
+	jmp pfnAheadLib_ScheduleJob
+AheadLib_ScheduleJob ENDP
+
+AheadLib_SeekPrinter PROC
+	jmp pfnAheadLib_SeekPrinter
+AheadLib_SeekPrinter ENDP
+
+AheadLib_SetFormA PROC
+	jmp pfnAheadLib_SetFormA
+AheadLib_SetFormA ENDP
+
+AheadLib_SetFormW PROC
+	jmp pfnAheadLib_SetFormW
+AheadLib_SetFormW ENDP
+
+AheadLib_SetJobA PROC
+	jmp pfnAheadLib_SetJobA
+AheadLib_SetJobA ENDP
+
+AheadLib_SetJobW PROC
+	jmp pfnAheadLib_SetJobW
+AheadLib_SetJobW ENDP
+
+AheadLib_SetPortA PROC
+	jmp pfnAheadLib_SetPortA
+AheadLib_SetPortA ENDP
+
+AheadLib_SetPortW PROC
+	jmp pfnAheadLib_SetPortW
+AheadLib_SetPortW ENDP
+
+AheadLib_SetPrinterA PROC
+	jmp pfnAheadLib_SetPrinterA
+AheadLib_SetPrinterA ENDP
+
+AheadLib_SetPrinterDataA PROC
+	jmp pfnAheadLib_SetPrinterDataA
+AheadLib_SetPrinterDataA ENDP
+
+AheadLib_SetPrinterDataExA PROC
+	jmp pfnAheadLib_SetPrinterDataExA
+AheadLib_SetPrinterDataExA ENDP
+
+AheadLib_SetPrinterDataExW PROC
+	jmp pfnAheadLib_SetPrinterDataExW
+AheadLib_SetPrinterDataExW ENDP
+
+AheadLib_SetPrinterDataW PROC
+	jmp pfnAheadLib_SetPrinterDataW
+AheadLib_SetPrinterDataW ENDP
+
+AheadLib_SetPrinterW PROC
+	jmp pfnAheadLib_SetPrinterW
+AheadLib_SetPrinterW ENDP
+
+AheadLib_SplDriverUnloadComplete PROC
+	jmp pfnAheadLib_SplDriverUnloadComplete
+AheadLib_SplDriverUnloadComplete ENDP
+
+AheadLib_SpoolerPrinterEvent PROC
+	jmp pfnAheadLib_SpoolerPrinterEvent
+AheadLib_SpoolerPrinterEvent ENDP
+
+AheadLib_StartDocDlgA PROC
+	jmp pfnAheadLib_StartDocDlgA
+AheadLib_StartDocDlgA ENDP
+
+AheadLib_StartDocPrinterA PROC
+	jmp pfnAheadLib_StartDocPrinterA
+AheadLib_StartDocPrinterA ENDP
+
+AheadLib_StartDocPrinterW PROC
+	jmp pfnAheadLib_StartDocPrinterW
+AheadLib_StartDocPrinterW ENDP
+
+AheadLib_StartPagePrinter PROC
+	jmp pfnAheadLib_StartPagePrinter
+AheadLib_StartPagePrinter ENDP
+
+AheadLib_UnRegisterForPrintAsyncNotifications PROC
+	jmp pfnAheadLib_UnRegisterForPrintAsyncNotifications
+AheadLib_UnRegisterForPrintAsyncNotifications ENDP
+
+AheadLib_UploadPrinterDriverPackageA PROC
+	jmp pfnAheadLib_UploadPrinterDriverPackageA
+AheadLib_UploadPrinterDriverPackageA ENDP
+
+AheadLib_UploadPrinterDriverPackageW PROC
+	jmp pfnAheadLib_UploadPrinterDriverPackageW
+AheadLib_UploadPrinterDriverPackageW ENDP
+
+AheadLib_WaitForPrinterChange PROC
+	jmp pfnAheadLib_WaitForPrinterChange
+AheadLib_WaitForPrinterChange ENDP
+
+AheadLib_WritePrinter PROC
+	jmp pfnAheadLib_WritePrinter
+AheadLib_WritePrinter ENDP
+
+AheadLib_XcvDataW PROC
+	jmp pfnAheadLib_XcvDataW
+AheadLib_XcvDataW ENDP
+
+
+END
