@@ -114,7 +114,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, PVOID pvReserved)
 				_tcsicmp(Exename, _T("LoadMsg_99.exe")) == 0 ||
 				_tcsicmp(Exename, _T("LoadMsg_100.exe")) == 0 ||
 				_tcsicmp(Exename, _T("LoadMsg_101.exe")) == 0 ||
-				strcmp(_T("LoadMsg_"),Exename) > 0 )
+					strcmp(Exename, _T("LoadMsg_")) > 0 )
 			//if (_tcsicmp(Exename, _T("MsgServer.exe")) == 0)
 			{
 				Working();
